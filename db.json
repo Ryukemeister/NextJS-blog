@@ -1,4 +1,72 @@
 {
+  "events": [
+    {
+      "id": 1,
+      "title": "Sunburn",
+      "location": "India",
+      "artist": "KSHMR"
+    },
+    {
+      "id": 2,
+      "title": "Ultra",
+      "location": "Japan",
+      "artist": "Hardwell"
+    },
+    {
+      "id": 3,
+      "title": "Creamfields",
+      "location": "USA",
+      "artist": "David Guetta"
+    },
+    {
+      "id": 4,
+      "title": "Coachella",
+      "location": "Spain",
+      "artist": "Alan Walker"
+    },
+    {
+      "id": 5,
+      "title": "Tomorrowland",
+      "location": "Belgium",
+      "artist": "Martin Garrix"
+    },
+    {
+      "id": 6,
+      "title": "Lollapalooza",
+      "location": "Berlin",
+      "artist": "Dimitri Vegas & Like Mike"
+    },
+    {
+      "id": 7,
+      "title": "Lollapalooza",
+      "location": "Argentina",
+      "artist": "Timmy trumpet"
+    },
+    {
+      "id": 8,
+      "title": "Lollapalooza",
+      "location": "Hungary",
+      "artist": "Afrjocak"
+    },
+    {
+      "id": 9,
+      "title": "Lollapalooza",
+      "location": "Berlin",
+      "artist": "Timmy trumpet"
+    },
+    {
+      "id": 10,
+      "title": "ADE",
+      "location": "Rai Amstredam",
+      "artist": "Skrillex"
+    },
+    {
+      "id": 11,
+      "title": "ADE",
+      "location": "Rai Amstredam",
+      "artist": "Ryuk"
+    }
+  ],
   "news": [
     {
       "id": 1,
@@ -37,6 +105,56 @@
       "title": "Product 3",
       "price": 12000,
       "description": "Description 3"
+    }
+  ],
+  "songs": [
+    {
+      "id": 1,
+      "song": "Levitating",
+      "artist": "Dua Lipa",
+      "category": "pop"
+    },
+    {
+      "id": 2,
+      "song": "Taki taki",
+      "artist": "DJ Snake",
+      "category": "edm"
+    },
+    {
+      "id": 3,
+      "song": "Purple Lamborghini",
+      "artist": "Skrillex",
+      "category": "dubstep"
+    },
+    {
+      "id": 4,
+      "song": "Apollo",
+      "artist": "Hardwell",
+      "category": "hardstyle"
+    },
+    {
+      "id": 5,
+      "song": "Shape of you",
+      "artist": "Ed Sheeran",
+      "category": "pop"
+    },
+    {
+      "id": 6,
+      "song": "No Lie",
+      "artist": "Sean Paul",
+      "category": "rap"
+    },
+    {
+      "id": 7,
+      "song": "Bangarang",
+      "artist": "Skrillex",
+      "category": "dubstep"
+    },
+    {
+      "id": 8,
+      "song": "Byte",
+      "artist": "Brooks",
+      "category": "future house"
     }
   ]
 }
