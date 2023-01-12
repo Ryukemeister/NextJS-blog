@@ -26,10 +26,10 @@ export default Show;
 
 export async function getServerSideProps(context) {
   const { params } = context;
-  const res = await fetch(
+  const response = await fetch(
     `http://localhost:4000/events?title=${params.festivalName}`
   );
-  const data = await res.json();
+  const data = await response.json();
 
   if (data.length == 0) {
     return {
