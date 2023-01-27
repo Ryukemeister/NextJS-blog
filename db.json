@@ -1,4 +1,48 @@
 {
+  "personalities": [
+    {
+      "id": 1,
+      "title": "Lionel Messi",
+      "description": "The GOAT of football",
+      "age": 37,
+      "category": "sports"
+    },
+    {
+      "id": 2,
+      "title": "Rafael Nadal",
+      "description": "My favourite tennis player",
+      "age": 35,
+      "category": "sports"
+    },
+    {
+      "id": 3,
+      "title": "Martin Garrix",
+      "description": "The one like whom I aspire to be one day",
+      "age": 25,
+      "category": "music"
+    },
+    {
+      "id": 4,
+      "title": "Leonardo Di Caprio",
+      "description": "An epitome of perfection, hardwork and passion",
+      "age": 49,
+      "category": "movies"
+    },
+    {
+      "id": 5,
+      "title": "Cristiano Roanldo",
+      "description": "A mentality monster and has an insane work rate",
+      "age": 39,
+      "category": "sports"
+    },
+    {
+      "id": 6,
+      "title": "Hardwell",
+      "description": "The one and only legend and genius",
+      "age": 33,
+      "category": "music"
+    }
+  ],
   "dashboard": {
     "posts": 1,
     "likes": 77,
