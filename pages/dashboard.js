@@ -1,11 +1,11 @@
 import { Inter } from "@next/font/google";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 function Dashboard() {
-  const [isLoading, setIsLoading] = useState(true);
   const [dashboardData, setDashboardData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     async function getDashboardData() {
@@ -19,24 +19,14 @@ function Dashboard() {
     getDashboardData();
   }, []);
 
-  if (isLoading) {
-    return (
-      <>
-        <h1 className={inter.className}>Loading...</h1>
-      </>
-    );
-  }
+  if (isLoading) return <h1 className={inter.className}>Loading...</h1>;
 
   return (
     <>
-      <h1 className={inter.className}>Dashboard:</h1>
-      <h1 className={inter.className}>
-        Posts - {dashboardData.posts} | Likes - {dashboardData.likes}
-      </h1>
-      <h2 className={inter.className}>
-        Followers - {dashboardData.followers} | Following -
-        {dashboardData.following}
-      </h2>
+      <h1 className={inter.className}>Posts - {dashboardData.posts}</h1>
+      <h1 className={inter.className}>Likes - {dashboardData.likes}</h1>
+      <h1 className={inter.className}>Followers - {dashboardData.followers}</h1>
+      <h1 className={inter.className}>Following - {dashboardData.likes}</h1>
     </>
   );
 }
