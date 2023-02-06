@@ -1,16 +1,19 @@
 import { Inter } from "@next/font/google";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 function Events({ eventList }) {
   const [events, setEvents] = useState(eventList);
+  const router = useRouter();
 
   async function getSportEvents() {
     const response = await fetch("http://localhost:4000/event?category=sports");
     const data = await response.json();
 
     setEvents(data);
+    router.push("/eventss?category=sports", undefined, { shallow: true });
   }
 
   async function getEventsBasedOnCategory(category) {
@@ -27,6 +30,7 @@ function Events({ eventList }) {
     }
 
     setEvents(data);
+    router.push(`/eventss?category=${category}`, undefined, { shallow: true });
   }
 
   return (
@@ -54,8 +58,11 @@ function Events({ eventList }) {
 
 export default Events;
 
-export async function getServerSideProps() {
-  const response = await fetch("http://localhost:4000/event");
+export async function getServerSideProps({ query }) {
+  const { category } = query;
+  const queryString = category ? "category=sports" : "";
+
+  const response = await fetch(`http://localhost:4000/event?${queryString}`);
   const data = await response.json();
 
   return {
